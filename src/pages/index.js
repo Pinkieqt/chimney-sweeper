@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Kominictví Radomír Ďuriš</title>
+      <title>Kominictví Radomír Ďuriš </title>
 
       {/* land */}
       <div className="flex flex-wrap justify-between items-center md:my-16">
