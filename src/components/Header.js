@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import { useLocation } from "@reach/router";
 
 export default function Header() {
+  const location = useLocation();
   return (
     <nav>
       <ul className="flex justify-between items-center md:text-lg mt-5 mb-10">
@@ -18,13 +20,18 @@ export default function Header() {
             <Link to="/">Úvod</Link>
           </li>
           <li className="hover:text-red-400  transition duration-200">
-            <Link to="/#sluzby">Služby</Link>
-            <button onClick={() => scrollTo("#sluzby")}>Služby</button>
-            <button onClick={() => console.log(window.location.href)}>xxxxxx</button>
+            {location.pathname !== "/" ? (
+              <Link to="/#sluzby">Služby</Link>
+            ) : (
+              <button onClick={() => scrollTo("#sluzby")}>Služby</button>
+            )}
           </li>
           <li className="hover:text-red-400  transition duration-200">
-            {/* <Link to="/about">Kontakty</Link> */}
-            <button onClick={() => scrollTo("#kontakty")}>Kontakty</button>
+            {location.pathname !== "/" ? (
+              <Link to="/#kontakty">Kontakty</Link>
+            ) : (
+              <button onClick={() => scrollTo("#kontakty")}>Kontakty</button>
+            )}
           </li>
         </div>
       </ul>
