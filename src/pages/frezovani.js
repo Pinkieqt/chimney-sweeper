@@ -7,11 +7,12 @@ const Milling = () => {
   return (
     <Layout>
       <title>Kominictví Radomír Ďuriš</title>
-      <div className="min-h-screen">
-        <div className="w-full h-96 mb-16 rounded-lg">
+
+      <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
+        <div className="w-full h-96 mb-16 rounded-xl">
           <StaticImage
             placeholder="blurred"
-            className="rounded-lg"
+            className="rounded-xl"
             src="../images/3.jpg"
             alt="Komín 1"
             style={{ height: "100%", width: "100%" }}
@@ -20,7 +21,9 @@ const Milling = () => {
         </div>
 
         {/* Frezovani */}
-        <h1 className="font-bold text-3xl">Frézování komínů</h1>
+        <h1 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-indigo-400">
+          Frézování komínů
+        </h1>
 
         <p className="text-gray-500 mt-4">
           Frézování komínů je proces při kterém se rozšiřuje komínový průduch. Obvykle se provádí
