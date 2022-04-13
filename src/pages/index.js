@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import * as React from "react";
@@ -56,7 +55,7 @@ const IndexPage = () => {
               Celý seznam námi nabízených služeb naleznete{" "}
               <span
                 role="button"
-                className="text-rose-400 underline hover:text-rose-400  transition duration-200 cursor-pointer"
+                className="text-rose-400 underline hover:text-rose-600  transition duration-200 cursor-pointer"
                 onClick={() => scrollTo("#sluzby")}
               >
                 zde
@@ -84,7 +83,7 @@ const IndexPage = () => {
             Neváhejte nás{" "}
             <span
               role="button"
-              className="text-rose-400 underline hover:text-rose-400 transition duration-200 cursor-pointer"
+              className="text-rose-400 underline hover:text-rose-600 transition duration-200 cursor-pointer"
               onClick={() => scrollTo("#kontakty")}
             >
               kontaktovat

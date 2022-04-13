@@ -21,9 +21,7 @@ const Milling = () => {
         </div>
 
         {/* Frezovani */}
-        <h1 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-indigo-400">
-          Frézování komínů
-        </h1>
+        <h1 className="font-bold text-3xl text-rose-400">Frézování komínů</h1>
 
         <p className="text-gray-500 mt-4">
           Frézování komínů je proces při kterém se rozšiřuje komínový průduch. Obvykle se provádí

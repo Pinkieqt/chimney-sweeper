@@ -9,9 +9,7 @@ const Lining = () => {
 
       <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
         {/* Vložkování */}
-        <h1 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-indigo-400">
-          Vložkování komínů
-        </h1>
+        <h1 className="font-bold text-3xl text-rose-400">Vložkování komínů</h1>
 
         <p className="text-gray-500 mt-4">
           Při vložkování se do průduchů komína zavádí pevná nebo ohebná komínová vložka. Vložkování

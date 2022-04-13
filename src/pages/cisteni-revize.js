@@ -9,9 +9,7 @@ const CleaningAndRevision = () => {
 
       <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
         {/* Čištění spalinových cest */}
-        <h1 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-indigo-400">
-          Čištění spalinových cest
-        </h1>
+        <h1 className="font-bold text-3xl text-rose-400">Čištění spalinových cest</h1>
 
         <p className="text-gray-500 mt-4">
           Čištění spalinové cesty se provádí mechanickým odstraněním pevných látek, usazenin a
@@ -90,9 +88,7 @@ const CleaningAndRevision = () => {
         </table>
 
         {/* Revize */}
-        <h1 className="font-bold text-3xl mt-16 bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-indigo-400">
-          Revize spalinových cest
-        </h1>
+        <h1 className="font-bold text-3xl mt-16 text-rose-400">Revize spalinových cest</h1>
 
         <p className="text-gray-500 mt-4">
           Provádíme výchozí revize komínů a kouřových cest u novostaveb, tak i periodické revize u

@@ -11,8 +11,8 @@ export default function Services() {
           {/* First row */}
           <div className="flex flex-wrap justify-between  md:p-5">
             <div className="w-full md:w-3/5 md:pr-4">
-              <div className="bg-neutral-600 shadow-lg h-fit md:h-64 flex flex-col justify-center  rounded-xl p-5 mb-5 md:mb-0">
-                <h1 className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-indigo-300">
+              <div className="bg-zinc-600 shadow-lg h-fit md:h-80 lg:h-72 xl:h-64 flex flex-col justify-center  rounded-xl p-5 mb-5 md:mb-0">
+                <h1 className="font-bold text-xl text-rose-200">
                   Čištění a revize spalinových cest
                 </h1>
                 <p className="text-zinc-300 my-5">
@@ -27,10 +27,8 @@ export default function Services() {
               </div>
             </div>
             <div className="w-full md:w-2/5 md:pl-4">
-              <div className="bg-neutral-600 shadow-lg h-fit md:h-64 flex flex-col justify-center  rounded-xl p-5 mb-5 md:mb-0">
-                <h1 className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-indigo-300">
-                  Frézování komínů
-                </h1>
+              <div className="bg-zinc-600 shadow-lg h-fit md:h-80 lg:h-72 xl:h-64 flex flex-col justify-center  rounded-xl p-5 mb-5 md:mb-0">
+                <h1 className="font-bold text-xl text-rose-200">Frézování komínů</h1>
                 <p className="text-zinc-300 my-5">
                   Frézování komínů je proces při kterém se rozšiřuje komínový průduch. Obvykle se
                   provádí jako příprava pro následné vložkování komína.
@@ -47,10 +45,8 @@ export default function Services() {
           {/* Second row */}
           <div className="flex flex-wrap justify-between md:mb-8  md:p-5">
             <div className="w-full md:w-2/5 md:pr-4">
-              <div className="bg-neutral-600 shadow-lg h-fit md:h-64 flex flex-col justify-center rounded-xl p-5 mb-5 md:mb-0">
-                <h1 className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-indigo-300">
-                  Vložkování komínů
-                </h1>
+              <div className="bg-zinc-600 shadow-lg h-fit md:h-80 lg:h-72 xl:h-64 flex flex-col justify-center rounded-xl p-5 mb-5 md:mb-0">
+                <h1 className="font-bold text-xl text-rose-200">Vložkování komínů</h1>
                 <p className="text-zinc-300 my-5">
                   Při vložkování se do průduchů komína zavádí pevná nebo ohebná komínová vložka.
                   Vložkování komínů zajišťuje bezpečný odvod spalin.
@@ -63,8 +59,8 @@ export default function Services() {
               </div>
             </div>
             <div className="w-full md:w-3/5 md:pl-4">
-              <div className="bg-neutral-600 shadow-lg h-fit md:h-64 flex flex-col justify-center rounded-xl p-5">
-                <h1 className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-rose-300 to-indigo-300">
+              <div className="bg-zinc-600 shadow-lg h-fit md:h-80 lg:h-72 xl:h-64 flex flex-col justify-center rounded-xl p-5">
+                <h1 className="font-bold text-xl text-rose-200">
                   Oprava nadstřešních částí komínů
                 </h1>
                 <p className="text-zinc-300 my-5">

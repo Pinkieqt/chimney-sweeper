@@ -15,18 +15,18 @@ export default function Header() {
             </Link>
           </li>
         </div>
-        <div className="flex justify-between gap-x-5 md:gap-x-10">
-          <li className="hover:text-rose-400  transition duration-200">
+        <div className="flex justify-between">
+          <li className="hover:text-rose-400 transition duration-200">
             <Link to="/">Úvod</Link>
           </li>
-          <li className="hover:text-rose-400  transition duration-200">
+          <li className="hover:text-rose-400  transition duration-200 ml-4 md:ml-10">
             {location.pathname !== "/" ? (
               <Link to="/#sluzby">Služby</Link>
             ) : (
               <button onClick={() => scrollTo("#sluzby")}>Služby</button>
             )}
           </li>
-          <li className="hover:text-rose-400  transition duration-200">
+          <li className="hover:text-rose-400  transition duration-200 ml-4 md:ml-10">
             {location.pathname !== "/" ? (
               <Link to="/#kontakty">Kontakt</Link>
             ) : (

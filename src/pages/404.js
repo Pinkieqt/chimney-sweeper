@@ -13,7 +13,10 @@ const NotFoundPage = () => {
             Vypadá to, že se snažíte zobrazit stránku, která neexistuje, nebo je momentálně
             nedostupná.
           </p>
-          <Link className="px-4 py-2 bg-gray-400 text-white rounded-xl" to="/">
+          <Link
+            className="mt-4 text-white bg-neutral-600 rounded-xl px-4 py-2 hover:bg-rose-400  transition duration-300"
+            to="/"
+          >
             Domů
           </Link>
         </div>
