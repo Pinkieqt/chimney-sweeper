@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 
@@ -9,6 +10,7 @@ const Repairing = () => {
 
       <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
         {/* Oprava */}
+
         <h1 className="font-bold text-3xl text-rose-400">Oprava nadstřešních částí komínů</h1>
 
         <p className="text-gray-500 mt-4">
@@ -20,6 +22,29 @@ const Repairing = () => {
         <p className="text-gray-500 mt-4">
           Nabízíme kompletní opravu nadstřešní části zděných komínů.
         </p>
+
+        <div className="flex flex-wrap justify-between items-center rounded-xl text-center md:text-left mt-16">
+          <div className="w-full md:w-1/2 h-96 md:h-96 mb-4 md:mb-0 md:p-3">
+            <StaticImage
+              placeholder="blurred"
+              className="rounded-xl"
+              src="../images/oprava1.jpeg"
+              alt="Komín 1"
+              style={{ height: "100%", width: "100%" }}
+              imgStyle={{ objectFit: "cover" }}
+            />
+          </div>
+          <div className="w-full md:w-1/2 h-96 md:h-96 mb-4 md:mb-0 md:p-3">
+            <StaticImage
+              placeholder="blurred"
+              className="rounded-xl"
+              src="../images/oprava2.jpeg"
+              alt="Komín 1"
+              style={{ height: "100%", width: "100%" }}
+              imgStyle={{ objectFit: "cover" }}
+            />
+          </div>
+        </div>
       </div>
     </Layout>
   );

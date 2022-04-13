@@ -54,7 +54,7 @@ const CleaningAndRevision = () => {
             </tr>
             <tr>
               <td className="border border-neutral-300" rowSpan={2}>
-                do 50 kW včětně
+                do 50 kW včetně
               </td>
               <td>Čištění spalinové cesty</td>
               <td className="border border-neutral-300">3x za rok</td>

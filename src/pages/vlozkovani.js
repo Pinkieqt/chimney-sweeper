@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 
@@ -27,8 +28,8 @@ const Lining = () => {
           <li>
             <span className="font-bold">Nerezová ocel - pevné rourové kouřovody:</span> K dispozici
             máme kompletní sortiment kolen, redukcí a nástavců. Průměry materiálů od 150 mm do 200
-            mm. Norma Dle předepsaných norem musí být tloušťka kouřovodu minimálně 0,8 mm. U nás
-            používáme standartně komínové vložky od 1 mm.
+            mm. Dle předepsaných norem musí být tloušťka kouřovodu minimálně 0,8 mm. U nás používáme
+            standartně komínové vložky od 1 mm.
           </li>
           <li>
             <span className="font-bold">Nerezová ocel - flexibilní hadice: </span>Jsou určeny pro
@@ -37,6 +38,20 @@ const Lining = () => {
             150 mm do 200 mm.{" "}
           </li>
         </ul>
+
+        {/* Image */}
+        <div className="flex flex-wrap justify-center items-center rounded-xl text-center md:text-left mt-16">
+          <div className="w-72 h-96 md:h-96 mb-4 md:mb-0 md:p-3">
+            <StaticImage
+              placeholder="blurred"
+              className="rounded-xl"
+              src="../images/vlozkovani1.jpeg"
+              alt="Komín 1"
+              style={{ height: "100%", width: "100%" }}
+              imgStyle={{ objectFit: "cover" }}
+            />
+          </div>
+        </div>
       </div>
     </Layout>
   );

@@ -9,7 +9,7 @@ const Milling = () => {
       <title>Kominictví Radomír Ďuriš</title>
 
       <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
-        <div className="w-full h-96 mb-16 rounded-xl">
+        {/* <div className="w-full h-96 mb-16 rounded-xl">
           <StaticImage
             placeholder="blurred"
             className="rounded-xl"
@@ -18,7 +18,7 @@ const Milling = () => {
             style={{ height: "100%", width: "100%" }}
             imgStyle={{ objectFit: "cover" }}
           />
-        </div>
+        </div> */}
 
         {/* Frezovani */}
         <h1 className="font-bold text-3xl text-rose-400">Frézování komínů</h1>

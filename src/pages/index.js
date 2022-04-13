@@ -18,7 +18,7 @@ const IndexPage = () => {
               <StaticImage
                 placeholder="blurred"
                 className="rounded-xl"
-                src="../images/4.jpg"
+                src="../images/uvod1.jpeg"
                 alt="Komín 1"
                 style={{ height: "100%", width: "100%" }}
                 imgStyle={{ objectFit: "cover" }}
