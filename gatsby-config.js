@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/images/`,
+        name: "images",
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

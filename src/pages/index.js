@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import * as React from "react";
+import Homegallery from "../components/homegallery";
 import Layout from "../components/layout";
 import Services from "../components/services";
 
@@ -76,7 +77,6 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
-
         {/* contact us */}
         <div className="w-full flex justify-center mb-8 md:mb-16 font-bold text-xl text-center">
           <p>
@@ -95,6 +95,9 @@ const IndexPage = () => {
 
       {/* Nabízené služby */}
       <Services />
+
+      {/* Gallery */}
+      <Homegallery />
 
       {/* contacts */}
 

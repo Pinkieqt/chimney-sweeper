@@ -29,7 +29,7 @@ const Repairing = () => {
               placeholder="blurred"
               className="rounded-xl"
               src="../images/oprava1.jpeg"
-              alt="Komín 1"
+              alt="Před opravou"
               style={{ height: "100%", width: "100%" }}
               imgStyle={{ objectFit: "cover" }}
             />
@@ -39,7 +39,7 @@ const Repairing = () => {
               placeholder="blurred"
               className="rounded-xl"
               src="../images/oprava2.jpeg"
-              alt="Komín 1"
+              alt="Po opravě"
               style={{ height: "100%", width: "100%" }}
               imgStyle={{ objectFit: "cover" }}
             />

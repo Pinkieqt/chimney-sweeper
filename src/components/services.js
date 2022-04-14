@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <>
       {/* offered services */}
-      <div id="sluzby" className="w-full py-4 bg-white mb-8 ">
+      <div id="sluzby" className="w-full py-4 bg-white ">
         <div className="p-3 mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
           <h1 className="font-bold text-3xl mb-4 md:px-5">Nabízené služby</h1>
 
