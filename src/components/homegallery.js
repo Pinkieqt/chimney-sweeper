@@ -37,14 +37,14 @@ export default function Homegallery() {
             className="z-50 fixed flex justify-center items-center top-0 left-0 w-screen h-screen bg-black bg-opacity-75 cursor-pointer"
             onClick={() => setShowBg(!showBg)}
           >
-            <div className="flex flex-col justify-center items-center p-5 w-full h-1/2 md:w-3/4 md:h-3/4 lg:w-2/4 lg:h-3/4">
+            <div className="flex flex-col justify-center items-center p-5 w-full h-3/4 md:w-3/4 md:h-3/4 lg:w-2/4 lg:h-3/4">
               <GatsbyImage
                 placeholder="blurred"
                 className="rounded-xl"
                 image={fluid}
                 alt=""
                 style={{ height: "100%", width: "100%" }}
-                imgStyle={{ objectFit: "contain" }}
+                imgStyle={{ objectFit: "cover" }}
               />
 
               <button
@@ -59,12 +59,12 @@ export default function Homegallery() {
 
         {/* First row */}
         <div className="flex flex-wrap justify-between md:px-5">
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1" 
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g1.jpeg");
-              }}
+              }}> 
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g1.jpeg"
@@ -73,12 +73,12 @@ export default function Homegallery() {
               imgStyle={{ objectFit: "cover" }}
             />
           </div>
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1"
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g2.jpeg");
-              }}
+              }}>
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g2.jpeg"
@@ -87,12 +87,12 @@ export default function Homegallery() {
               imgStyle={{ objectFit: "cover" }}
             />
           </div>
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1"
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g3.jpeg");
-              }}
+              }}>
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g3.jpeg"
@@ -105,12 +105,12 @@ export default function Homegallery() {
 
         {/* Second row */}
         <div className="flex flex-wrap justify-between md:px-5">
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1"
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g4.jpeg");
-              }}
+              }}>
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g4.jpeg"
@@ -119,12 +119,12 @@ export default function Homegallery() {
               imgStyle={{ objectFit: "cover" }}
             />
           </div>
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1"
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g5.jpeg");
-              }}
+              }}>
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g5.jpeg"
@@ -133,12 +133,12 @@ export default function Homegallery() {
               imgStyle={{ objectFit: "cover" }}
             />
           </div>
-          <div className="w-1/3 h-32 md:h-40 p-1">
-            <StaticImage
+          <div className="w-1/3 h-32 md:h-40 p-1"
               onClick={() => {
                 setShowBg(!showBg);
                 setOpenedImg("g6.jpeg");
-              }}
+              }}>
+            <StaticImage
               placeholder="blurred"
               className="rounded-xl  cursor-pointer"
               src="../images/g6.jpeg"
@@ -148,6 +148,7 @@ export default function Homegallery() {
             />
           </div>
         </div>
+        
       </div>
     </div>
   );
