@@ -117,7 +117,9 @@ const IndexPage = () => {
               <p className="">76098281</p>
 
               <p className="text-gray-500 mt-4 text-lg">Telefon</p>
-              <p className="">+420 731 808 040</p>
+              <a className="underline" href="tel:+420731808040">
+                +420 731 808 040
+              </a>
 
               <p className=" text-gray-500 mt-4 text-lg">E-mail</p>
               <a className="underline" href="mailto:radomir.duris@seznam.cz">
