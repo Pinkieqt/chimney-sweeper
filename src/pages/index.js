@@ -97,7 +97,7 @@ const IndexPage = () => {
       <Services />
 
       {/* Gallery */}
-      {/* <Homegallery /> */}
+      <Homegallery />
 
       {/* contacts */}
 
