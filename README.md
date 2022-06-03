@@ -1,4 +1,4 @@
 
 ## 🚀 Quick start
 
-**View on https://kominik.netlify.app/**
+**View on https://www.kominictviduris.cz**
