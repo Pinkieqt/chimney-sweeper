@@ -1,11 +1,17 @@
 import * as React from "react";
+import Helmet from "react-helmet";
 import Layout from "../components/layout";
 
 // markup
 const CleaningAndRevision = () => {
   return (
     <Layout>
-      <title>Kominictví Radomír Ďuriš</title>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Kominictví Radomír Ďuriš - Čištění a revize komínů</title>
+        <link rel="canonical" href="https://www.kominictviduris.cz/cisteni-revize" />
+        <meta name="description" content="Kominík Kujavy Radomír Ďuriš provádíme čištění a revize komínů" />
+      </Helmet>
 
       <div className="p-3 min-h-screen mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">
         {/* Čištění spalinových cest */}

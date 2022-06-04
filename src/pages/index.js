@@ -4,12 +4,19 @@ import * as React from "react";
 import Homegallery from "../components/homegallery";
 import Layout from "../components/layout";
 import Services from "../components/services";
+import { Helmet } from "react-helmet"
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Kominictví Radomír Ďuriš </title>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Kominictví Radomír Ďuriš</title>
+          <link rel="canonical" href="https://www.kominictviduris.cz/" />
+          <meta name="seznam-wmt" content="Egzs62loBDfLGVF4J1UTwgStio502Xx4" />
+          <meta name="description" content="Kominík Radomír Ďuriš Kujavy" />
+        </Helmet>
 
       {/* land */}
       <div className="p-3 mx-auto w-full md:w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-3/6">

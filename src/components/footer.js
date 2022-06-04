@@ -44,7 +44,7 @@ export default function Footer() {
             )}
             <br />
             <br />
-            <p>&copy; {new Date().getFullYear()}</p>
+            <p>&copy; {new Date().getFullYear()}, <a href="https://github.com/Pinkieqt">design and code</a></p>
           </div>
         </div>
       </div>
