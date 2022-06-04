@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kominictví Radomír Ďuriš`,
     description: `Kominictví Radomír Ďuriš, provádíme revize komínových částí, revize komínů, čištění spalinových cest a čištění všech typů komínů, také opravy nadstřešních částí komínů, frézování komínu a v neposlední řadě vložkování komínů.`,
-    siteUrl: `https://www.kominictviduris.cz`,
+    siteUrl: `https://www.kominictviduris.cz/`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -53,7 +53,7 @@ module.exports = {
           }
         }
       `,
-        resolveSiteUrl: () => siteUrl,
+        resolveSiteUrl: () => "https://www.kominictviduris.cz/",
         resolvePages: ({
           allSitePage: { nodes: allPages },
           allWpContentNode: { nodes: allWpNodes },
