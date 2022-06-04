@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Kominictví Radomír Ďuriš`,
     description: `Kominictví Radomír Ďuriš, provádíme revize komínových částí, revize komínů, čištění spalinových cest a čištění všech typů komínů, také opravy nadstřešních částí komínů, frézování komínu a v neposlední řadě vložkování komínů.`,
-    siteUrl: `https://www.kominictviduris.cz/`,
+    siteUrl: "https://www.kominictviduris.cz/",
   },
   plugins: [
     "gatsby-plugin-postcss",
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -28,54 +29,6 @@ module.exports = {
         display: `standalone`,
         icon: "src/images/gatsby_icon.png",
       },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-          allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
-            nodes {
-              ... on WpPost {
-                uri
-                modifiedGmt
-              }
-              ... on WpPage {
-                uri
-                modifiedGmt
-              }
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => "https://www.kominictviduris.cz/",
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-          allWpContentNode: { nodes: allWpNodes },
-        }) => {
-          const wpNodeMap = allWpNodes.reduce((acc, node) => {
-            const { uri } = node
-            acc[uri] = node
-
-            return acc
-          }, {})
-
-          return allPages.map(page => {
-            return { ...page, ...wpNodeMap[page.path] }
-          })
-        },
-        serialize: ({ path, modifiedGmt }) => {
-          return {
-            url: path,
-            lastmod: modifiedGmt,
-          }
-        },
-      },
-    },
+    }
   ],
 };
